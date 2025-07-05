@@ -27,7 +27,7 @@ YOu can then reboot, and login to your root account in emergency mode.
 
 # Using another root password for initramfs
 Copying your `/etc/shadow` to initramfs when you use an encrypted root partition has the downside of leaking **every account** passwords outside it.
-If you use an encrypted root partition, you can use a different password for the root account in initramfs by creating a file `/etc/shadow.initrams` using the same format as `/etc/shadow`.
+If you use an encrypted root partition, you can use a different password for the root account in initramfs by creating a file `/etc/shadow.initramfs` using the same format as `/etc/shadow`.
 
 You can create the file like this:
 ```bash
