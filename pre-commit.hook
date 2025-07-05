@@ -1,0 +1,7 @@
+#!/bin/sh
+if ! diff -q .SRCINFO <(makepkg --printsrcinfo) > /dev/null; then
+  echo ".SRCINFO is out of date. Please run 'makepkg --printsrcinfo > .SRCINFO' and commit the changes."
+  exit 1
+fi
+
+exit 0
