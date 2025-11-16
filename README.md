@@ -23,7 +23,7 @@ Note: the `systemd` hook overwrites `/etc/shadow`, so `shadowcopy` must be place
 # mkinitcpio -P
 ```
 
-YOu can then reboot, and login to your root account in emergency mode.
+You can then reboot, and login to your root account in emergency mode.
 
 # Using another root password for initramfs
 Copying your `/etc/shadow` to initramfs when you use an encrypted root partition has the downside of leaking **every account** passwords outside it.
